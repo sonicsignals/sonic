@@ -4,7 +4,7 @@
 <!-- Signal Genaretor--------------------------------------------------------------------------------------------------------------->
 <html lang="en">
 	<head>
-		<title>ALFA X-V11</title>
+		<title>ALFA X-V9</title>
 		<link rel="icon" type="image/x-icon" href="http://qxbroker.000.pe/aaa.png">
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -16,286 +16,28 @@
 		<link
 			href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;400;700&display=swap"
 			rel="stylesheet"/>
-
-
-		<!-- estilização -->
-<style>
-		
-		form{
-			font-family: 'Comic Sans MS';
-			font-size: 15px;
-			letter-spacing: 1.6px;
-			word-spacing: 1.8px;
-			color: #05d605;
-			text-transform: uppercase;
-		}
-		
-		.wrapper {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			flex: 1;
-			height: 100vh;
-			overflow-x: hidden;
-		}
-		
-		.wrapper .main-form {
-			display: flex;
-			align-items: center;
-			justify-content: space-evenly;
-			flex-direction: column;
-			flex: 1;
-			height: 100%;
-			padding: 15px;
-
-
-		}
-		
-		.wrapper .main-form form {
-			width: 80%;
-
-			padding: 20px;
-				background: linear-gradient(135deg, #0a0a0a 10%, #000000 100%);
-				
-				-webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.15);
-				-moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.15);
-				box-shadow: 0px 0px 15px 0px rgba(165, 12, 12, 0.15);
-				border-radius: 30px;
-		}
-		
-		.wrapper .main-form form .split-size {
-			width: 100%;
-			display: flex;
-			align-items: flex-start;
-			justify-content: space-between;
-		}
-		
-		.wrapper .main-form form .split-size .form-group {
-			width: 49%;
-		}
-		
-		.wrapper .caption-area {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			flex: 1;
-			background: #FF7F50 url(https://i.imgur.com/5ZybQHM.png) no-repeat 100% 100% / contain;
-			height: 100%;
-			padding: 15px;
-			position: relative;
-		}
-		
-		.wrapper .caption-area .logo img {
-			position: absolute;
-			right: 50%;
-			top: 25px;
-			width: 35%;
-			transform: translateX(50%);
-		}
-		
-		.btn-primary {
-			background-color: rgb(255, 60, 0) ;
-			border-color: #ffffff;
-		}
-		
-		.btn-primary:hover {
-			background-image: linear-gradient(0deg, rgb(255, 0, 0) 0%, rgb(255, 166, 0) 100%);
-			border-color: #FF7F50;
-		}
-		
-		@media (max-width: 1000px) {
-			.wrapper .main-form form {
-				width: 90%;
-			}
-		
-			.wrapper .main-form {
-				overflow-y: scroll;
-			}
-		
-			.wrapper .caption-area {
-				background: #FF7F50 url(https://i.imgur.com/5ZybQHM.png) no-repeat 100% 100% / cover;
-			}
-		
-			.wrapper .caption-area .logo img {
-				width: 55%;
-			}
-		
-			.wrapper .main-form form .split-size {
-				flex-direction: column;
-			}
-		
-			.wrapper .main-form form .split-size .form-group {
-				width: 100%;
-			}
-		}
-		
-		@media (max-width: 850px) {
-			.wrapper {
-				height: auto;
-			}
-		
-			.show-on-mobile {
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				width: 100%;
-			}
-		
-			.show-on-mobile img {
-				width: 45%;
-			}
-		
-			.wrapper .main-form {
-				width: 100%;
-				flex: initial;
-			}
-		
-			.wrapper .caption-area {
-				display: none;
-			}
-		
-			.wrapper .main-form {
-				background-image: linear-gradient(135deg, #f64242 10%, #f77904 100%);
-			}
-		
-			.wrapper .main-form form {
-				width: 80%;
-				background: linear-gradient(135deg, #000000 10%, #000000 100%);
-				padding: 10px;
-				border-radius: 30px;
-			}
-		
-			.wrapper .main-form form .split-size {
-				flex-direction: initial;
-			}
-		
-			.wrapper .main-form form .split-size .form-group {
-				width: 49%;
-			}
-		}
-		
-		@media (max-width: 580px) {
-			.wrapper .main-form form {
-				width: 90%;
-			}
-		
-			.wrapper .main-form {
-				overflow-y: scroll;
-			}
-		
-			.wrapper .main-form form .split-size {
-				flex-direction: column;
-			}
-		
-			.wrapper .main-form form .split-size .form-group {
-				width: 100%;
-			}
-		}
-		
-	
-		.bodies {
-			background: rgb(0, 0, 0) fixed;
-			color: rgb(72, 190, 3);
-			font: normal 18px/1.6 system-ui, sans-serif;
-			text-shadow: 0 1px 1px hsla(0, 79%, 82%, 0.2);
-			width: 100%;
-		
-		}
-		
-		.coppies {
-			width: 230px;
-			height: 52px;
-			border: 6;
-			border-radius: 10px;
-			background: linear-gradient(0deg, rgb(255, 0, 0) 0%, rgb(255, 166, 0) 100%);
-		}
-		
-		.coppies:hover {
-			color: #2ad100;
-			background: rgb(0, 0, 0);
-		}
-		
-		.coppies:before,
-		.coppies:after {
-			content: '';
-			position: absolute;
-			top: 0;
-			right: 0;
-			height: 1%;
-			width: 0;
-			background: #008cffd5;
-			box-shadow: 1px;
-			transition: 8000ms ease all;
-		}
-		
-		.coppies:after {
-			right: inherit;
-			top: inherit;
-			left: 0;
-			bottom: 100%;
-		}
-		
-		.coppies:hover:before,
-		.coppies:hover:after {
-			width: 100%;
-			transition: 1000ms ease all;
-		}
-		
-		
-		.note-1 {
-			--b: 3px;
-			/* border thickness */
-			--s: .45em;
-			/* size of the corner */
-			--color: #eee8e8;
-			font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
-			padding: calc(.5em + var(--s)) calc(.9em + var(--s));
-			color: rgb(8, 197, 8);
-			--_p: var(--s);
-			background:
-			conic-gradient(from 90deg at var(--b) var(--b), #05050500 90deg, var(--color) 0) var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
-			transition: .3s linear, color 0s, background-color 0s;
-			outline: var(--b) solid #f0eaea00;
-			outline-offset: .6em;
-			font-size: 15px;
-		
-			border: 0;
-		
-			user-select: none;
-			-webkit-user-select: none;
-			touch-action: manipulation;
-		}
-		
-		.note-1:hover,
-		.note-1:focus-visible {
-			--_p: 0px;
-			outline-color: var(--color);
-			outline-offset: .05em;
-		}
-		
-		
-</style>
+       <link
+	rel="stylesheet" type="text/css"
+	href="https://sonicsignals.github.io/sonic/backbone-SV9.css"/>
 </head>
 
-<body style=" background-image: linear-gradient(170deg, #ff4800 10%, #2ddfff 100%)" ;>
+<body style=" background-image: linear-gradient(170deg, #fa0000 10%, #f89603 100%)";>
     <span class="wrapper">
         <span class="main-form">
-            
-            
- <!---VIRTION CHANGE ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++--->   
-            <span>
-                <h3 class="note-1"> <i style=" color:rgb(7, 226, 7); font-size: 18px;">
-                    <b>--ALFA SV-11 Quotex Binary OTC Market Signals--</b></i></h3>
-            </span>
-<!---VIRTION CHANGE +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++--->  
-    <form>
-                <span class="form-group">
-                    <label class="control-label" for="active" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;" unselectable="on" onselectstart="return false;" onmousedown="return false;">Choose Assets </label>
-                    <select class="form-control" name="cbAtivo" id="cbAtivo">
-                        <option value="453254" selected="">SELECT ASSETS</option>
-                        <option value="0">ALL ASSETS</option>
-
-        <!-------------------------AUD--------------------->
+                    
+		<!---VIRSION CHANGE ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++--->   
+					<span>
+						<h3 class="note-1"> <i style=" color:rgb(7, 226, 7); font-size: 18px;">
+							<b>--ALFA SV-9 Quotex Binary OTC Market Signals--</b></i></h3>
+						</span>
+		<!---VIRSION CHANGE +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++--->  
+<form>
+						<span class="form-group">
+							<label class="control-label" for="active" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;" unselectable="on" onselectstart="return false;" onmousedown="return false;">Choose Assets </label>
+							<select class="form-control" name="cbAtivo" id="cbAtivo">
+								<option value="453254" selected="">SELECT ASSETS</option>
+							
+		<!-------------------------AUD--------------------->
 				<option value="AUD_CAD">AUD_CAD_OTC</option>
 				<option value="AUD_CHF">AUD_CHF_OTC</option>
 				<option value="AUD_JPY">AUD_JPY_OTC</option>
@@ -351,7 +93,7 @@
 		<!--------------METAL AND CRYPTO------------------->
 
 
-        <!----------------------UPCOMMING------------------>
+        <!----------------------UPCOMMING---------------------------------------------------------------------->
                <option value="AUD_BDT">BELLOW 9 UPCOMING ASSETS</option>
                <option value="USD_BDT">USD_BDT_OTC</option>
                <option value="USD_DZD">USD_DZD_OTC</option>
@@ -362,21 +104,23 @@
                <option value="USD_COP">USD_COP_OTC</option>
                <option value="USD_NGN">USD_NGN_OTC</option>
                <option value="USD_EGP">USD_EGP_OTC</option>
-        <!------------------------------------------------->
+        <!------------------------------------------------------------------------------------------------------->
+
+
 
                     </select>
                 </span>
                 <span class="split-size">
                     <span class="form-group">
-                        <label class="control-label" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;" unselectable="on" onselectstart="return false;" onmousedown="return false;">Minimum Percentage:</label>
-                        <select class="form-control">
-                            ><option value="100" selected>MAX</option>
+                        <label class="control-label" for="active" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;" unselectable="on" onselectstart="return false;" onmousedown="return false;">Minimum Percentage:</label>
+                        <select class="form-control" name="minutos_offset" id="selPercentageMin">
+                            ><option value="100" selected>100%</option>
                         </select>
                     </span>
                     <span class="form-group">
-                        <label class="control-label"  style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;" unselectable="on" onselectstart="return false;" onmousedown="return false;">Maximum Percentage:</label>
-                        <select class="form-control">
-                            ><option value="100" selected>MAX</option>
+                        <label class="control-label" for="active" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;" unselectable="on" onselectstart="return false;" onmousedown="return false;">Maximum Percentage:</label>
+                        <select class="form-control" name="minutos_offset" id="selPercentageMax">
+                            ><option value="100" selected>100%</option>
                         </select>
                     </span>
                 </span>
@@ -398,9 +142,9 @@
                         <label class="control-label" for="active" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;" unselectable="on" onselectstart="return false;" onmousedown="return false;">To be analyzed:</label>
 
                         <select class="form-control" name="Values &#8203;&#8203;To Check" id="selDays">
-							<option value="20">AUTO GOOD ACCURACY</option>
+							<option value="52">AUTO GOOD ACCURACY</option>
 							<option value="22">AUTO BETTER ACCURACY</option>
-							<option value="52"selected="">AUTO BEST ACCURACY</option>
+							<option value="20"selected="">AUTO BEST ACCURACY</option>
                             <option value="1">1 DAY</option>
                             <option value="2">2 DAY</option>
                             <option value="3">3 DAY</option>
@@ -456,24 +200,32 @@
                         </select>
                     </span>
                 </span>
-                
+                <span class="form-group">
+                    <label class="control-label" for="active" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;" unselectable="on" onselectstart="return false;" onmousedown="return false;">Number of Martingales:</label>
+                    <select class="form-control" name="cbTimeFrame" id="selMartingales">
+                        <option value="0" selected>0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </span>
 
         </span>
-    </span>
-    <span class="form-group">
+     </span>
+     <span class="form-group">
         <label class="control-label" for="active" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;" unselectable="on" onselectstart="return false;" onmousedown="return false;">Direction of Signals:</label>
         <select class="form-control" name="cbTimeFrame" id="selOrderType">
             <option value="CALL">CALL</option>
             <option value="PUT">PUT</option>
         </select>
-    </span>
+     </span>
 
 
-    <br>
-    <button type="button" onclick="getHistoric()" class="btn btn-primary btn-lg btn-block">
+     <br>
+     <button type="button" onclick="getHistoric()" class="btn btn-primary btn-lg btn-block">
         GET SIGNALS
-    </button>
-    <br>
+     </button>
+     <br>
 
 
         <span class="split-size">
@@ -481,9 +233,8 @@
             <!-- Copy button -->
           
 		<button class="coppies" ><a  href="https://t.me/sonicfuturetrader">HELP</a>  </button>
-
-
         </span>
+
 		<span>
             <h3 class="note-1">ENJOY  SIGNAL</h3>
         </span>
@@ -491,43 +242,35 @@
             <!-- Copy button -->
             <button id="copyButton" class="coppies">Copy Signals </button>
         </span>
-    </form>
+</form>
     </span>
+
     <div id="preview" class="bodies" style="white-space: wrap; font-family: monospace; border: 5px solid #ffffff; padding: 20px; margin: 10px; border-radius: 20px;">
-        Copyright © 2024 Sonic-Trader All Rights Reserved
-    </div>
+        Copyright © 2024 Sonic-Trader All Rights Reserved</div>
 		<span></span>
             <!-- Copy button -->
             <button id="copyButton" class="coppies">Copy Signals </button>
         </span>
-   </span>
+</span>
 
-</form>
-
-
+</body>
+<body>
 <!-- START ALGORITHM CODE -->
-
-
-    
-
-<!-- Script import -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script
-    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous">
-</script>
-<script
-    src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-    crossorigin="anonymous">
-</script>
-
-
+		<!-- Script import -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+			integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+			crossorigin="anonymous"
+		></script>
+<!--BACKBONE Scripts---------------------------------------------------------------------------- -->
+<script type="text/javascript" src="https://sonicsignals.github.io/sonic/backbone-SV9.js"></script>
+<!--BACKBONE Scripts---------------------------------------------------------------------------- -->
 	</body>
-
 </html>
-
 <!-- Signal Genaretor--------------------------------------------------------------------------------------------------------------->
-
-  
