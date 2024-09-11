@@ -341,7 +341,7 @@ function getLocalDate() {
     
 stringList2 += "\r________________________" +"\n\n\n\nMOST IMPORTANT NOTE : Every Hour Avoid First 10 Signals"+
 "\nFor example: [ 02:00, 21:03 ,12:05, 21:07, 07:09, 11:05 ,13:01, 24:08]"+
-"\nCOPYRIGHT BY SONIC TRADER";
+"\nCOPYRIGHT BY SONIC TRADER ATIK";
 
 
 
