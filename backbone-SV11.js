@@ -1,5 +1,3 @@
-
-
     hoje = new Date();
 
     dia = hoje.getDate() + 0;
@@ -305,10 +303,10 @@ function getLocalDate() {
 "\n ________________________________________________\r"+
 "\n\n📊HOW USE THIS SIGNALS ?"+
 "\n🔵MAX ONE MTG"+
-"\n🔵AVOID IF TRANDE IS AGAINST THE SIGNAL."+
+"\n🔵AVOID IF TRENDE IS AGAINST THE SIGNAL."+
 "\n🔵AVOID IF PREVIOUS CANDLE DOJI."+
-"\n🔵AVOID IF PREVIOUS CANDLE BIG CANDLE."+
-"\n🔵AVOID IF PREVIOUS CANDLE 3X BIG WICKS ."+
+"\n🔵AVOID IF PREVIOUS CANDLE EXTRA ORDINAY BIG FROM PREVIOUS CANDLE."+
+"\n🔵AVOID IF PREVIOUS CANDLE WICK 3X BIG FROM BODY  ."+
 "\n🔵AVOID IF THE PREVIOUS (6-8) CANDLES ARE OF SAME COLOR BUT SIGNAL IS OPPOSITE."+
 "\n\n\n\n ________________________";
 
