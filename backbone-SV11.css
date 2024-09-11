@@ -1,4 +1,4 @@
-                form{
+                      form{
 			font-family: 'Comic Sans MS';
 			font-size: 15px;
 			letter-spacing: 1.6px;
@@ -7,6 +7,11 @@
 			text-transform: uppercase;
 		}
 		
+                   .image-display {
+                      max-width: 100%;  
+                       border-radius: 8px;
+                      }  
+
 		.wrapper {
 			display: flex;
 			align-items: center;
