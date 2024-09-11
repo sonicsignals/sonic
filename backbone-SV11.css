@@ -151,9 +151,9 @@
 			}
 		}
 		
-		@media (max-width: 380px) {
+		@media (max-width: 580px) {
 			.wrapper .main-form form {
-				width: 370px;
+				width: 350px;
 			}
 		
 			.wrapper .main-form {
