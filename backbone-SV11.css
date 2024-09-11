@@ -139,7 +139,7 @@
 				width: 80%;
 				background: linear-gradient(135deg, #000000 10%, #000000 100%);
 				padding: 10px;
-				border-radius: 30px;
+				border-radius: 15px;
 			}
 		
 			.wrapper .main-form form .split-size {
@@ -151,7 +151,7 @@
 			}
 		}
 		
-		@media (max-width: 470px) {
+		@media (max-width: 480px) {
 			.wrapper .main-form form {
 				width: 100%;
 			}
