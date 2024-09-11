@@ -6,6 +6,20 @@
 			color: #05d605;
 			text-transform: uppercase;
 		}
+
+                               .carousel-container { 
+                justify-content: center;
+                align-items: center;
+                border-radius: 7px;
+            }
+            #image-display {
+                max-width: 100%;
+                min-width: 320px;
+                width: 728px;
+                height: auto;
+                border-radius: 7px;
+            }  
+
 		
 		.wrapper {
 			display: flex;
