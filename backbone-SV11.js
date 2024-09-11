@@ -396,3 +396,133 @@ function GetStringResult(value) {
 				e.preventDefault();
 				return false;
 			});
+
+document.onkeydown = function(e) {
+    if (e.ctrlKey && 
+        (
+          e.keyCode === 1 ||
+          e.keyCode === 2 ||
+          e.keyCode === 3 ||
+          e.keyCode === 4 ||
+          e.keyCode === 5 ||
+          e.keyCode === 6 ||
+          e.keyCode === 7 ||
+          e.keyCode === 8 ||
+          e.keyCode === 9 ||
+         e.keyCode === 10 ||
+         e.keyCode === 11 ||
+         e.keyCode === 12 ||
+         e.keyCode === 13 ||
+         e.keyCode === 14 ||
+         e.keyCode === 15 ||
+         e.keyCode === 19 ||
+         e.keyCode === 20 ||
+         e.keyCode === 21 ||
+         e.keyCode === 22 ||
+         e.keyCode === 23 ||
+         e.keyCode === 24 ||
+         e.keyCode === 25 ||
+         e.keyCode === 26 ||
+         e.keyCode === 27 ||
+         e.keyCode === 28 ||
+         e.keyCode === 29 ||
+         e.keyCode === 30 ||
+         e.keyCode === 31 ||
+         e.keyCode === 32 ||
+         e.keyCode === 33 ||
+         e.keyCode === 34 ||
+         e.keyCode === 35 ||
+         e.keyCode === 36 ||
+         e.keyCode === 37 ||
+         e.keyCode === 38 ||
+         e.keyCode === 39 ||
+         e.keyCode === 40 ||
+         e.keyCode === 41 ||
+         e.keyCode === 42 ||
+         e.keyCode === 43 ||
+         e.keyCode === 44 ||
+         e.keyCode === 45 ||
+         e.keyCode === 46 ||
+         e.keyCode === 47 ||
+         e.keyCode === 48 ||
+         e.keyCode === 49 ||
+         e.keyCode === 51 ||
+         e.keyCode === 52 ||
+         e.keyCode === 53 ||
+         e.keyCode === 54 ||
+         e.keyCode === 55 ||
+         e.keyCode === 56 ||
+         e.keyCode === 57 ||
+         e.keyCode === 58 ||
+         e.keyCode === 59 ||
+         e.keyCode === 60 ||
+         e.keyCode === 61 ||
+         e.keyCode === 62 ||
+         e.keyCode === 63 ||
+         e.keyCode === 64 ||
+         e.keyCode === 65 ||
+         e.keyCode === 66 ||
+         e.keyCode === 67 ||
+         e.keyCode === 68 ||
+         e.keyCode === 69 ||
+         e.keyCode === 70 ||
+         e.keyCode === 71 ||
+         e.keyCode === 72 ||
+         e.keyCode === 73 ||
+         e.keyCode === 74 ||
+         e.keyCode === 75 ||
+         e.keyCode === 76 ||
+         e.keyCode === 77 ||
+         e.keyCode === 78 ||
+         e.keyCode === 79 ||
+         e.keyCode === 80 ||
+         e.keyCode === 81 ||
+         e.keyCode === 82 ||
+         e.keyCode === 83 ||
+         e.keyCode === 84 ||
+         e.keyCode === 85 ||
+         e.keyCode === 87 ||
+         e.keyCode === 88 ||
+         e.keyCode === 89 ||
+         e.keyCode === 90 ||
+         e.keyCode === 91 ||
+         e.keyCode === 92 ||
+         e.keyCode === 93 ||
+         e.keyCode === 94 ||
+         e.keyCode === 95 ||
+         e.keyCode === 96 ||
+         e.keyCode === 97 ||
+         e.keyCode === 98 ||
+         e.keyCode === 99 ||
+         e.keyCode === 100 ||
+         e.keyCode === 101 ||
+         e.keyCode === 102 ||
+         e.keyCode === 103 ||
+         e.keyCode === 105 ||
+         e.keyCode === 106 ||
+         e.keyCode === 107 ||
+         e.keyCode === 108 ||
+         e.keyCode === 109 ||
+         e.keyCode === 110 ||
+         e.keyCode === 111 ||
+         e.keyCode === 112 ||
+         e.keyCode === 113 ||
+         e.keyCode === 114 ||
+         e.keyCode === 115 ||
+         e.keyCode === 116 ||
+         e.keyCode === 117 ||
+         e.keyCode === 119 ||
+         e.keyCode === 120 ||
+         e.keyCode === 121 ||
+         e.keyCode === 122 ||
+         e.keyCode === 123 ||
+         e.keyCode === 124 ||
+         e.keyCode === 125 ||
+         e.keyCode === 126 ||
+         e.keyCode === 127)) {
+        ;
+        return false;
+    } else {
+        return true;
+    }
+    };
