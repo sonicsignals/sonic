@@ -165,9 +165,9 @@
 			}
 		}
 		
-		@media (max-width: 580px) {
+		@media (max-width: 480px) {
 			.wrapper .main-form form {
-				width: 90%;
+				width: 100%;
 			}
 		
 			.wrapper .main-form {
