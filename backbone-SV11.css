@@ -7,10 +7,18 @@
 			text-transform: uppercase;
 		}
 		
-                   .image-display {
-                      max-width: 100%;  
-                       border-radius: 8px;
-                      }  
+                 .carousel-container { 
+                justify-content: center;
+                align-items: center;
+                border-radius: 7px;
+            }
+            #image-display {
+                max-width: 100%;
+                min-width: 320px;
+                width: 728px;
+                height: auto;
+                border-radius: 7px;
+            }  
 
 		.wrapper {
 			display: flex;
