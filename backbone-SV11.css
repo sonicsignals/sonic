@@ -19,7 +19,7 @@
 		.wrapper .main-form {
 			display: flex;
 			align-items: center;
-			justify-content: space-evenly;
+			justify-content: space;
 			flex-direction: column;
 			flex: 1;
 			height: 100%;
