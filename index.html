@@ -4,7 +4,7 @@
 <!-- Signal Genaretor--------------------------------------------------------------------------------------------------------------->
 <html lang="en">
 	<head>
-		<title>ALFA X-V9</title>
+		<title>ALFA X-V11</title>
 		<link rel="icon" type="image/x-icon" href="http://qxbroker.000.pe/aaa.png">
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -16,28 +16,39 @@
 		<link
 			href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;400;700&display=swap"
 			rel="stylesheet"/>
-       <link
-	rel="stylesheet" type="text/css"
-	href="https://sonicsignals.github.io/sonic/backbone-SV9.css"/>
+
+
+		<!-- estilização -->
+
+
+        <link
+        rel="stylesheet" type="text/css"
+        href="https://sonicsignals.github.io/sonic/backbone-SV11.css"/>
+
+		
+
+
 </head>
 
-<body style=" background-image: linear-gradient(170deg, #fa0000 10%, #f89603 100%)";>
+<body style=" background-image: linear-gradient(170deg, #f89603 10%, #fa0000 100%)" ;>
     <span class="wrapper">
         <span class="main-form">
-                    
-		<!---VIRSION CHANGE ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++--->   
-					<span>
-						<h3 class="note-1"> <i style=" color:rgb(7, 226, 7); font-size: 18px;">
-							<b>--ALFA SV-9 Quotex Binary OTC Market Signals--</b></i></h3>
-						</span>
-		<!---VIRSION CHANGE +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++--->  
-<form>
-						<span class="form-group">
-							<label class="control-label" for="active" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;" unselectable="on" onselectstart="return false;" onmousedown="return false;">Choose Assets </label>
-							<select class="form-control" name="cbAtivo" id="cbAtivo">
-								<option value="453254" selected="">SELECT ASSETS</option>
-							
-		<!-------------------------AUD--------------------->
+            
+            
+ <!---VIRTION CHANGE ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++--->   
+            <span>
+                <h3 class="note-1"> <i style=" color:rgb(7, 226, 7); font-size: 18px;">
+                    <b>--ALFA SV-11 Quotex Binary OTC Market Signals--</b></i></h3>
+            </span>
+<!---VIRTION CHANGE +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++--->  
+    <form>
+                <span class="form-group">
+                    <label class="control-label" for="active" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;" unselectable="on" onselectstart="return false;" onmousedown="return false;">Choose Assets </label>
+                    <select class="form-control" name="cbAtivo" id="cbAtivo">
+                        <option value="453254" selected="">SELECT ASSETS</option>
+                        <option value="0">ALL ASSETS</option>
+
+        <!-------------------------AUD--------------------->
 				<option value="AUD_CAD">AUD_CAD_OTC</option>
 				<option value="AUD_CHF">AUD_CHF_OTC</option>
 				<option value="AUD_JPY">AUD_JPY_OTC</option>
@@ -93,7 +104,7 @@
 		<!--------------METAL AND CRYPTO------------------->
 
 
-        <!----------------------UPCOMMING---------------------------------------------------------------------->
+        <!----------------------UPCOMMING------------------>
                <option value="AUD_BDT">BELLOW 9 UPCOMING ASSETS</option>
                <option value="USD_BDT">USD_BDT_OTC</option>
                <option value="USD_DZD">USD_DZD_OTC</option>
@@ -104,23 +115,21 @@
                <option value="USD_COP">USD_COP_OTC</option>
                <option value="USD_NGN">USD_NGN_OTC</option>
                <option value="USD_EGP">USD_EGP_OTC</option>
-        <!------------------------------------------------------------------------------------------------------->
-
-
+        <!------------------------------------------------->
 
                     </select>
                 </span>
                 <span class="split-size">
                     <span class="form-group">
-                        <label class="control-label" for="active" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;" unselectable="on" onselectstart="return false;" onmousedown="return false;">Minimum Percentage:</label>
-                        <select class="form-control" name="minutos_offset" id="selPercentageMin">
-                            ><option value="100" selected>100%</option>
+                        <label class="control-label" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;" unselectable="on" onselectstart="return false;" onmousedown="return false;">Minimum Percentage:</label>
+                        <select class="form-control">
+                            ><option value="100" selected>MAX</option>
                         </select>
                     </span>
                     <span class="form-group">
-                        <label class="control-label" for="active" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;" unselectable="on" onselectstart="return false;" onmousedown="return false;">Maximum Percentage:</label>
-                        <select class="form-control" name="minutos_offset" id="selPercentageMax">
-                            ><option value="100" selected>100%</option>
+                        <label class="control-label"  style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;" unselectable="on" onselectstart="return false;" onmousedown="return false;">Maximum Percentage:</label>
+                        <select class="form-control">
+                            ><option value="100" selected>MAX</option>
                         </select>
                     </span>
                 </span>
@@ -142,9 +151,9 @@
                         <label class="control-label" for="active" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;" unselectable="on" onselectstart="return false;" onmousedown="return false;">To be analyzed:</label>
 
                         <select class="form-control" name="Values &#8203;&#8203;To Check" id="selDays">
-							<option value="52">AUTO GOOD ACCURACY</option>
+							<option value="20">AUTO GOOD ACCURACY</option>
 							<option value="22">AUTO BETTER ACCURACY</option>
-							<option value="20"selected="">AUTO BEST ACCURACY</option>
+							<option value="52"selected="">AUTO BEST ACCURACY</option>
                             <option value="1">1 DAY</option>
                             <option value="2">2 DAY</option>
                             <option value="3">3 DAY</option>
@@ -200,32 +209,24 @@
                         </select>
                     </span>
                 </span>
-                <span class="form-group">
-                    <label class="control-label" for="active" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;" unselectable="on" onselectstart="return false;" onmousedown="return false;">Number of Martingales:</label>
-                    <select class="form-control" name="cbTimeFrame" id="selMartingales">
-                        <option value="0" selected>0</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                    </select>
-                </span>
+                
 
         </span>
-     </span>
-     <span class="form-group">
+    </span>
+    <span class="form-group">
         <label class="control-label" for="active" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;" unselectable="on" onselectstart="return false;" onmousedown="return false;">Direction of Signals:</label>
         <select class="form-control" name="cbTimeFrame" id="selOrderType">
             <option value="CALL">CALL</option>
             <option value="PUT">PUT</option>
         </select>
-     </span>
+    </span>
 
 
-     <br>
-     <button type="button" onclick="getHistoric()" class="btn btn-primary btn-lg btn-block">
+    <br>
+    <button type="button" onclick="getHistoric()" class="btn btn-primary btn-lg btn-block">
         GET SIGNALS
-     </button>
-     <br>
+    </button>
+    <br>
 
 
         <span class="split-size">
@@ -233,8 +234,9 @@
             <!-- Copy button -->
           
 		<button class="coppies" ><a  href="https://t.me/sonicfuturetrader">HELP</a>  </button>
-        </span>
 
+
+        </span>
 		<span>
             <h3 class="note-1">ENJOY  SIGNAL</h3>
         </span>
@@ -242,35 +244,42 @@
             <!-- Copy button -->
             <button id="copyButton" class="coppies">Copy Signals </button>
         </span>
-</form>
+    </form>
     </span>
-
     <div id="preview" class="bodies" style="white-space: wrap; font-family: monospace; border: 5px solid #ffffff; padding: 20px; margin: 10px; border-radius: 20px;">
-        Copyright © 2024 Sonic-Trader All Rights Reserved</div>
-		<span></span>
-            <!-- Copy button -->
-            <button id="copyButton" class="coppies">Copy Signals </button>
-        </span>
-</span>
+        Copyright © 2024 Sonic-Trader All Rights Reserved
+    </div>
+		
+   </span>
+
+</form>
+
+
+<!-- START ALGORITHM CODE ------------------------------------------------------------->
+
+<!-- Script import -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous">
+</script>
+<script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous">
+</script>
+
+<!-- Script BACKBONE------------------------------------------------------------------------------->
+
+<script type="text/javascript" src="https://sonicsignals.github.io/sonic/backbone-SV11.js"></script>
+<!-- Script BACKBONE------------------------------------------------------------------------------->
+
 
 </body>
-<body>
-<!-- START ALGORITHM CODE -->
-		<!-- Script import -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script
-			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-			crossorigin="anonymous"
-		></script>
-		<script
-			src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-			integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-			crossorigin="anonymous"
-		></script>
-<!--BACKBONE Scripts---------------------------------------------------------------------------- -->
-<script type="text/javascript" src="https://sonicsignals.github.io/sonic/backbone-SV9.js"></script>
-<!--BACKBONE Scripts---------------------------------------------------------------------------- -->
-	</body>
+
 </html>
+
 <!-- Signal Genaretor--------------------------------------------------------------------------------------------------------------->
+
+  
