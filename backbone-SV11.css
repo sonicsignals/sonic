@@ -1,23 +1,22 @@
-                      form{
-			font-family: 'Comic Sans MS';
-			font-size: 15px;
+    form{
+            font-family: sans-serif;
+        	font-size: 15px;
 			letter-spacing: 1.6px;
 			word-spacing: 1.8px;
 			color: #05d605;
 			text-transform: uppercase;
 		}
 		
-                 .carousel-container { 
-                justify-content: center;
-                align-items: center;
-                border-radius: 7px;
+        .carousel-container { 
+            justify-content: center;
+            align-items: center;
+            border-radius: 7px;
             }
-            #image-display {
-                max-width: 100%;
-                min-width: 320px;
-                width: 728px;
-                height: auto;
-                border-radius: 7px;
+        #image-display {
+            max-width: 100%;
+            width:auto;
+            height: auto;
+            
             }  
 
 		.wrapper {
@@ -34,7 +33,7 @@
 			align-items: center;
 			justify-content: space;
 			flex-direction: column;
-			flex: 1;
+			flex: 2;
 			height: 100%;
 			padding: 15px;
 
@@ -45,12 +44,12 @@
 			width: 80%;
 
 			padding: 20px;
-				background: linear-gradient(135deg, #0a0a0a 10%, #000000 100%);
+			background: rgba(0, 0, 0, 0.473);
 				
-				-webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.15);
-				-moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.15);
-				box-shadow: 0px 0px 15px 0px rgba(165, 12, 12, 0.15);
-				border-radius: 30px;
+			-webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.15);
+			-moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.15);
+			box-shadow: 0px 0px 15px 0px rgba(165, 12, 12, 0.15);
+			border-radius: 30px;
 		}
 		
 		.wrapper .main-form form .split-size {
@@ -95,7 +94,7 @@
 		
 		@media (max-width: 1000px) {
 			.wrapper .main-form form {
-				width: 90%;
+				width: 95%;
 			}
 		
 			.wrapper .main-form {
@@ -144,17 +143,6 @@
 				display: none;
 			}
 		
-			.wrapper .main-form {
-				background-image: linear-gradient(135deg, #ff0000 10%, #f77904 100%);
-			}
-		
-			.wrapper .main-form form {
-				width: 80%;
-				background: linear-gradient(135deg, #000000 10%, #000000 100%);
-				padding: 10px;
-				border-radius: 15px;
-			}
-		
 			.wrapper .main-form form .split-size {
 				flex-direction: initial;
 			}
@@ -184,51 +172,38 @@
 		
 	
 		.bodies {
-			background: rgb(0, 0, 0) fixed;
+			background: rgba(0, 0, 0, 0.651) fixed;
 			color: rgb(72, 190, 3);
-			font: normal 18px/1.6 system-ui, sans-serif;
+			font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: normal 18px/1.6 ;
 			text-shadow: 0 1px 1px hsla(0, 79%, 82%, 0.2);
-			width: 100%;
+			width: 98%;
 		
 		}
 		
 		.coppies {
 			width: 230px;
-			height: 52px;
-			border: 6;
-			border-radius: 10px;
+			height: 50px;
+			border-radius: 8px;
 			background: linear-gradient(0deg, rgb(255, 0, 0) 0%, rgb(255, 166, 0) 100%);
 		}
-		
-		.coppies:hover {
-			color: #2ad100;
+            
+        .coppies:hover {
+			color: #29c004;
 			background: rgb(0, 0, 0);
 		}
-		
-		.coppies:before,
-		.coppies:after {
-			content: '';
-			position: absolute;
-			top: 0;
-			right: 0;
-			height: 1%;
-			width: 0;
-			background: #008cffd5;
-			box-shadow: 1px;
-			transition: 8000ms ease all;
+
+
+		.coppiess {
+			width: auto;
+			height: 40px;
+			border-radius: 8px;
+			background: linear-gradient(0deg, rgb(255, 0, 0) 0%, rgb(255, 166, 0) 100%);
 		}
-		
-		.coppies:after {
-			right: inherit;
-			top: inherit;
-			left: 0;
-			bottom: 100%;
-		}
-		
-		.coppies:hover:before,
-		.coppies:hover:after {
-			width: 100%;
-			transition: 1000ms ease all;
+
+		.coppiess:hover {
+			color: #25b301;
+			background: rgb(0, 0, 0);
 		}
 		
 		
@@ -237,10 +212,10 @@
 			/* border thickness */
 			--s: .45em;
 			/* size of the corner */
-			--color: #eee8e8;
+			--color:  #ff5020;
 			font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
 			padding: calc(.5em + var(--s)) calc(.9em + var(--s));
-			color: rgb(8, 197, 8);
+			color: rgb(241, 241, 241);
 			--_p: var(--s);
 			background:
 			conic-gradient(from 90deg at var(--b) var(--b), #05050500 90deg, var(--color) 0) var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
@@ -262,3 +237,14 @@
 			outline-color: var(--color);
 			outline-offset: .05em;
 		}
+
+        html, body {
+height: 100%;
+margin: 0;
+}
+body {
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: center;
+background-size: cover;
+}
