@@ -398,6 +398,17 @@ function GetStringResult(value) {
 			});
 
 
+
+ function openLinkById(id) {
+        var link = document.getElementById(id);
+        if (link) {
+            window.open(link.href, '_blank'); // Opens in a new tab
+        } else {
+            console.log('Link not found');
+        }
+    }
+
+
     document.onkeydown = function(e) {
     if (e.ctrlKey && 
         (
