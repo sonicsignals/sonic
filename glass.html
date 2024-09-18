@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Glass Size & Cost Calculator</title>
+    <title>Glass & Hardware Cost Calculator</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-   <style> * {
+   <style> 
+    * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
@@ -19,10 +20,12 @@
         align-items: center;
         height: 100%;
         padding: 5px;
+        border: 1px;
+        border-color: #000000;
     }
     
     .container {
-        background-color: #fff;
+        background-color: #ffffff6b;
         border-radius: 8px;
         padding: 5px;
         width: 100%;
@@ -35,13 +38,14 @@
     h1 {
         text-align: center;
         font-size: 1.5rem;
-        color: #000000;
+        color: #ffffff;
         margin-bottom: 20px;
         font-weight: normal;
+
     }
     
     .item {
-        background-color: #f1f1f1;
+        background-color: #05f5fda4;
         padding: 5px;
         border-radius: 5px;
         margin-bottom: 15px;
@@ -49,18 +53,19 @@
         justify-content: space-between;
         flex-direction: column;
     }
-    
-    .item .inputs {
-        width: 100%;
+
+    .hardware-item {
+        background-color: #ff5f03;
+        padding: 7px;
+        border-radius: 5px;
+        margin-bottom: 15px;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
     }
     
-    .item .inputs label {
-        font-size: 0.85rem;
-        color: #530606;
-        margin-bottom: 5px;
-    }
-    
-    .item .inputs input {
+    .item input,
+    .hardware-item input {
         padding: 3px;
         background-color: #ffffff;
         border: 2px solid #00b7ff;
@@ -68,34 +73,28 @@
         font-size: 20px;
         color: #000000;
         margin-bottom: 0px;
-        width: 27.8%;
-        height: 50px;
         transition: border-color 0.2s ease;
     }
-    
-    .item .inputs input:focus {
-        border-color: #3b82f6;
+
+    .item input:focus,
+    .hardware-item input:focus {
+        border-color: #7082a0;
     }
     
-    
- 
-
-    .item .remove-btn {
-        background-color: #ff6464;
-        border:  5px;
-        color: rgb(255, 255, 255);
+    .item .remove-btn,
+    .hardware-item .remove-btn {
+        background-color: #ff2d2d;
+        color: #fff;
         padding: 5px;
         border-radius: 10px;
-        height: 70px ;
-        max-width: 35px;
-        padding-left: 0.9cqb;
         cursor: pointer;
-        
         transition: background-color 1.1s ease;
+        height: 50px;
     }
     
-    .item .remove-btn:hover {
-        background-color: #ff0000;
+    .item .remove-btn:hover,
+    .hardware-item .remove-btn:hover {
+        background-color: #a50000;
     }
     
     button {
@@ -108,17 +107,10 @@
         cursor: pointer;
         margin-bottom: 15px;
         transition: background-color 1.2s ease;
-        align-items: center;
-        justify-content: center;
     }
     
     button:hover {
         background-color: #0051ff;
-    }
-    
-    button i {
-        margin-right: 8px;
-        font-size: 1.1rem;
     }
     
     .result {
@@ -126,120 +118,150 @@
         padding: 1px;
         min-height: 90px;
         font-size: 25px;
-        background-color: #cecece;
+        background-color: #ffffffbd;
         border-radius: 5px;
         color: #000000;
         margin-top: 20px;
         margin-bottom: 20px;
-        border: 1px solid #31f300;
+        border: 3px solid #000000b4;
     }
     
     #add-glass-btn {
-        background-color: #10b981;
+        background-color: #098d31;
+    }
+
+    #add-hardware-btn {
+        background-color: #098d31;
     }
     
-    #add-glass-btn:hover {
+    #add-glass-btn:hover,
+    #add-hardware-btn:hover {
         background-color: #006b30;
     }
 
-    .rate {
+    .rate,
+    .hardware-rate {
         background-color: #f1f1f1;
         padding: 1px;
         height: 44px;
         width: 340px;
         font-size: 20px;
         border-radius: 5px;
-        margin-bottom: 15px;
+        margin-bottom: 15px;  text-align: center;
+    }
+
+    .widthheight {
+        padding: 3px;
+        width: 75px;
+        height: 60px; text-align: center;
+    }
+
+    .quantity {
+        width: 110px;
+        height: 60px;
+        text-align: center;
+    } .quantitya {
+        text-align: center;
+        width: 327.8px;
+        height: 40px;
+    }
+
+
+    .quantityaa {
+        text-align: center;
+        width: 100px;
+        height: 40px;
+    }
+    .quantityy {
+        width: 176px;
+        height: 40px;
+         text-align: center;
+        border-color: #0ac45d;
     }
 
     .resultbtn {
-        background-color: #317ff5;
+        background-color: #0066ff;
         padding: 1px;
         height: 44px;
         width: 340px;
         font-size: 20px;
         border-radius: 5px;
-        margin-bottom: 15px;
+        margin-bottom: 15px; text-align: center;
     }
+
     .resultbtn:hover {
-        background-color: #0051ff;
+        background-color: #002470;
     }
-
-
-    .widthheight{
-        padding: 3px;
-        background-color: #e6e6e6;
-        border: 2px solid #00b7ff;
-        border-radius: 4px;
-        font-size: 22.5px;
-        color: #000000;
-        margin-bottom: 0px;
-        width: 75px;
-        height: 60px;
-        transition: border-color 0.2s ease;
-  }
-  
-  
-  .quantity{
-        padding: 1px;
-        background-color: #dfdede;
-        border: 2px solid #00b7ff;
-        border-radius: 4px;
-        font-size: 22.5px;
-        color: #000000;
-        margin-bottom: 0px;
-        width: 94px;
-        height: 60px;
-        transition: border-color 0.2s ease;
-  }
-
 </style>    
 </head>
 <body>
 
 <div class="container">
-    <h1><i class="fas fa-ruler-combined icon-inline"></i> Glass Size & Cost Calculator</h1>
+    <h1><i class="fas fa-ruler-combined icon-inline"></i> গ্লাস এবং হার্ডওয়ারের মূল্য পরিমাপক ক্যালকুলেটর</h1>
     <div class="result" id="result"></div>
+
+    <center><h2>___________গ্লাস___________</h2></center>
     <div id="glass-items">
         <div class="item" id="item-1">
-               <input class="widthheight" type="number" id="height-1" placeholder="দৈর্ঘ্য"> X
-               <input class="widthheight" type="number" id="width-1" placeholder="প্রস্থ"> X
-               <input  class="quantity" type="number" id="pieces-1" placeholder="পরিমাণ"><h8>&nbsp;</h8>
-               <button class="remove-btn aass " onclick="removeItem(1)"> <i class="fas fa-minus-circle"></i></button>       
-        </div>   
+            <input class="widthheight" type="number" id="height-1" placeholder="দৈর্ঘ্য"> X
+            <input class="widthheight" type="number" id="width-1" placeholder="প্রস্থ"> X
+            <input class="quantity" type="number" id="pieces-1" placeholder="পরিমাণ">
+            <button class="remove-btn" onclick="removeItem(1)"><i class="fas fa-minus-circle"></i></button>
+        </div>
+    </div>
+
+    <button class="resultbtn" id="add-glass-btn" onclick="addGlassItem()"><i class="fas fa-plus-circle"></i> ভিন্ন পরিমাপ  যোগ করুন</button>
+
+    <input class="rate" type="number" id="rate" placeholder="প্রতি স্কয়ার ফিট মূল্য">
+    <button class="resultbtn" onclick="calculate()"><i class="fas fa-calculator"></i> ফলাফল</button>
+
+    <center><h2><u>____হার্ডওয়্যার (ঐচ্ছিক)____</u></h2></center>
+    <div id="hardware-items">
+        <div class="hardware-item" id="hardware-item-1">
+            <input class="quantitya" type="text" placeholder="হার্ডওয়ারের নাম (ঐচ্ছিক)">
+           
+            <input class="quantityaa" type="number" id="hardware-qty-1" placeholder="পরিমাণ">
+              X <input class="quantityy" type="number" id="hardware-rate-1" placeholder="প্রতি পিস মূল্য">
+            <button class="remove-btn " onclick="removeHardwareItem(1)"><i class="fas fa-minus-circle"></i></button>
+
+        </div>
+
+    </div>
+
+    <button class="resultbtn" id="add-hardware-btn" onclick="addHardwareItem()"><i class="fas fa-plus-circle"></i> হার্ডওয়্যার যোগ করুন</button>
+
+    <button class="resultbtn" onclick="calculate()"><i class="fas fa-calculator"></i> ফলাফল</button>
+
+    <iframe src="https://sonicsignals.github.io/sonic/calculator.html" title="Example iframe" width="335" height="420"></iframe>
+
 </div>
-
- 
-
-<button class="resultbtn" id="add-glass-btn" onclick="addGlassItem()"><i class="fas fa-plus-circle"></i> ভিন্ন পরিমাপ</button>
-   
-
-    <input class="rate" type="number" id="rate" placeholder="  প্রতি স্কয়ার ফিট মূল্য" >
-
-
-   
-    <button class="resultbtn" onclick="calculate()"><i class="fas fa-calculator"></i>ফলাফল</button>
-   
-
 
 <script>
     let itemIndex = 1;
+    let hardwareIndex = 1;
 
     function addGlassItem() {
         itemIndex++;
         let newItem = `
             <div class="item" id="item-${itemIndex}">
-                    <input class="widthheight" type="number" id="height-${itemIndex}" placeholder="দৈর্ঘ্য"> X
-                    <input class="widthheight" type="number" id="width-${itemIndex}" placeholder="প্রস্থ"> X
-                    <input class="quantity" type="number" id="pieces-${itemIndex}" placeholder="পরিমাণ"><h8>&nbsp;</h8>
-                <button class="remove-btn" onclick="removeItem(${itemIndex})"><i class="fas fa-minus-circle" ></i></button>
-
+                <input class="widthheight" type="number" id="height-${itemIndex}" placeholder="দৈর্ঘ্য"> X
+                <input class="widthheight" type="number" id="width-${itemIndex}" placeholder="প্রস্থ"> X
+                <input class="quantity" type="number" id="pieces-${itemIndex}" placeholder="পরিমাণ">
+                <button class="remove-btn" onclick="removeItem(${itemIndex})"><i class="fas fa-minus-circle"></i></button>
             </div>`;
-
-
-
-
         document.getElementById('glass-items').insertAdjacentHTML('beforeend', newItem);
+    }
+
+    function addHardwareItem() {
+        hardwareIndex++;
+        let newHardwareItem = `
+            <div class="hardware-item" id="hardware-item-${hardwareIndex}">
+                <input class="quantitya" type="text"  placeholder="হার্ডওয়ারের নাম">
+                <input class="quantityaa" type="number" id="hardware-qty-${hardwareIndex}" placeholder="পরিমাণ"> X
+                <input class="quantityy" type="number" id="hardware-rate-${hardwareIndex}" placeholder="প্রতি পিস মূল্য">
+                <button class="remove-btn" onclick="removeHardwareItem(${hardwareIndex})"><i class="fas fa-minus-circle"></i></button>
+            </div>`;
+        document.getElementById('hardware-items').insertAdjacentHTML('beforeend', newHardwareItem);
     }
 
     function removeItem(index) {
@@ -247,10 +269,15 @@
         item.parentNode.removeChild(item);
     }
 
+    function removeHardwareItem(index) {
+        const hardwareItem = document.getElementById(`hardware-item-${index}`);
+        hardwareItem.parentNode.removeChild(hardwareItem);
+    }
+
     function calculate() {
         let rate = document.getElementById("rate").value;
         let totalSquareFeet = 0;
-        let totalCost = 0;
+        let totalGlassCost = 0;
 
         for (let i = 1; i <= itemIndex; i++) {
             let height = document.getElementById(`height-${i}`);
@@ -266,17 +293,28 @@
             }
         }
 
-        totalCost = totalSquareFeet * rate;
+        totalGlassCost = totalSquareFeet * rate;
 
-        document.getElementById("result").innerHTML = `
-            মোট:(  ${totalSquareFeet.toFixed(3)}  )স্কয়ার ফিট। <br>
-            মোট:(  ${totalCost.toFixed(1)}  )টাকা।
-        `;
+        let totalHardwareCost = 0;
+        for (let i = 1; i <= hardwareIndex; i++) {
+            let qty = document.getElementById(`hardware-qty-${i}`);
+            let hardwareRate = document.getElementById(`hardware-rate-${i}`);
+
+            if (qty && hardwareRate && qty.value > 0 && hardwareRate.value > 0) {
+                totalHardwareCost += qty.value * hardwareRate.value;
+            }
+        }
+
+        let totalCost = totalGlassCost + totalHardwareCost;
+
+        document.getElementById("result").innerHTML = 
+            `মোট: ${totalSquareFeet.toFixed(3)} স্কয়ার ফিট<br>
+            গ্লাস খরচ: ${totalGlassCost.toFixed(1)} টাকা<br>
+            হার্ডওয়্যার খরচ: ${totalHardwareCost.toFixed(1)} টাকা<br>
+            সর্বমোট: ${totalCost.toFixed(1)} টাকা`;
     }
+
 </script>
-<iframe src="https://sonicsignals.github.io/sonic/calculator.html" title="Example iframe" width="335" height="420"></iframe>
 
 </body>
 </html>
-
-
