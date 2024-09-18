@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
+    <title>Scientific Calculator</title>
     <style>
         * {
             margin: 0;
@@ -16,24 +16,26 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: #598bf0;
-            font-family: 'Arial', sans-serif;
+            background-color: #ffffff;        
         }
 
         .calculator {
-            background-color: #f7a8a8;
-            padding: 20px;
+            background-color: #008871;
+            padding: 10px;
+            height: 100;
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px rgba(255, 0, 0, 0.849);
         }
 
         #display {
-            width: 100%;
-            height: 50px;
+         
             font-size: 1.5rem;
+            background-color: #ffc7a7f6;
+            color: rgb(0, 0, 0);
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             text-align: right;
             padding: 10px;
-            border: 1px solid #ccc;
+            border: 2px solid #000000;
             border-radius: 5px;
             margin-bottom: 10px;
         }
@@ -44,41 +46,87 @@
             gap: 10px;
         }
 
-        button {
-            background-color: #e5e7eb;
-            border: none;
-            padding: 15px;
-            font-size: 1.2rem;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
 
-        button:hover {
-            background-color: #d1d5db;
-        }
 
-        button:active {
-            background-color: #9ca3af;
-        }
+button {
+    background-color: #e5e7eb;
+    border: none;
+    padding: 15px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
 
-        button:nth-child(n + 1) {
-            background-color: #60a5fa;
-            color: white;
-        }
+/* Numeric buttons (0-9) are blue */
+button:nth-child(5),
+button:nth-child(6),
+button:nth-child(7),
+button:nth-child(9),
+button:nth-child(10),
+button:nth-child(11),
+button:nth-child(13),
+button:nth-child(14),
+button:nth-child(15),
+button:nth-child(17),
+button:nth-child(18),
+button:nth-child(19)
+ {
+    background-color: #60a5fa;
+    color: white;
+}
 
-        button:nth-child(n + 1):hover {
-            background-color: #3b82f6;
-        }
+button:nth-child(5):hover,
+button:nth-child(6):hover,
+button:nth-child(7):hover,
+button:nth-child(9):hover,
+button:nth-child(10):hover,
+button:nth-child(11):hover,
+button:nth-child(13):hover,
+button:nth-child(14):hover,
+button:nth-child(15):hover
 
-        button:nth-child(1n+5) {
-            background-color: #fbbf24;
-            color: white;
-        }
+{
+    background-color: #3b82f6;
+}
 
-        button:nth-child(3n + 3):hover {
-            background-color: #f59e0b;
-        }
+/* Clear (C), Delete (DEL), and Equal (=) buttons are orange */
+button:nth-child(1),
+button:nth-child(4),
+button:nth-child(2)
+ {
+    background-color: #fbbf24;
+    color: white;
+}
+
+button:nth-child(1):hover,
+button:nth-child(2):hover,
+button:nth-child(4):hover
+
+ {
+    background-color: #f59e0b;
+}
+
+/* Other buttons (operators, parentheses, etc.) are green */
+button:nth-child(3),
+
+button:nth-child(8),
+button:nth-child(12),
+button:nth-child(16),
+
+button:nth-child(20) {
+    background-color: #10b981;
+    color: white;
+}
+
+button:nth-child(3):hover,
+button:nth-child(8):hover,
+button:nth-child(12):hover,
+button:nth-child(16):hover,
+button:nth-child(19):hover,
+button:nth-child(20):hover {
+    background-color: #059669;
+}
     </style>
 </head>
 <body>
@@ -88,7 +136,7 @@
             <button onclick="clearDisplay()">C</button>
             <button onclick="deleteLast()">DEL</button>
             <button onclick="calculatePercentage('%')">%</button>             
-            <button onclick="calculate()">=</button>
+            <button onclick="clearDisplay()">C</button>
             <button onclick="appendNumber('7')">7</button>
             <button onclick="appendNumber('8')">8</button>
             <button onclick="appendNumber('9')">9</button>
