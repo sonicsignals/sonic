@@ -157,12 +157,12 @@
     }
 
     .quantity {
-        width: 110px;
+        width: 105px;
         height: 60px;
         text-align: center;
     } .quantitya {
         text-align: center;
-        width: 327.8px;
+        width: 324.8px;
         height: 40px;
     }
 
@@ -173,9 +173,9 @@
         height: 40px;
     }
     .quantityy {
-        width: 176px;
+        width: 170px;
         height: 40px;
-         text-align: center;
+        text-align: center;
         border-color: #0ac45d;
     }
 
@@ -188,6 +188,10 @@
         border-radius: 5px;
         margin-bottom: 15px; text-align: center;
     }
+
+  .abcd {
+    margin-top: 2%;
+  }
 
     .resultbtn:hover {
         background-color: #002470;
@@ -214,16 +218,16 @@
 
     <input class="rate" type="number" id="rate" placeholder="প্রতি স্কয়ার ফিট মূল্য">
     <button class="resultbtn" onclick="calculate()"><i class="fas fa-calculator"></i> ফলাফল</button>
-
+<br><br>
     <center><h2><u>____হার্ডওয়্যার (ঐচ্ছিক)____</u></h2></center>
     <div id="hardware-items">
         <div class="hardware-item" id="hardware-item-1">
             <input class="quantitya" type="text" placeholder="হার্ডওয়ারের নাম (ঐচ্ছিক)">
-           
+           <div class="abcd">
             <input class="quantityaa" type="number" id="hardware-qty-1" placeholder="পরিমাণ">
               X <input class="quantityy" type="number" id="hardware-rate-1" placeholder="প্রতি পিস মূল্য">
             <button class="remove-btn " onclick="removeHardwareItem(1)"><i class="fas fa-minus-circle"></i></button>
-
+         </div>
         </div>
 
     </div>
@@ -318,3 +322,5 @@
 
 </body>
 </html>
+
+
