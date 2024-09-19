@@ -201,8 +201,17 @@
 <body>
 
 <div class="container">
-    <h1><i class="fas fa-ruler-combined icon-inline"></i> গ্লাস এবং হার্ডওয়ারের মূল্য পরিমাপক ক্যালকুলেটর</h1>
+    <h1><i class="fas fa-ruler-combined icon-inline"></i> <b>গ্লাস এবং হার্ডওয়ারের মূল্য পরিমাপক ক্যালকুলেটর</b></h1>
     <div class="result" id="result"></div>
+
+
+  <div>
+
+    <button hover=" background-color: green;" style="width: 115.5px; background-color: red; text-align: left;" onclick="reloadPage()">ফলাফল মুছুন </button>
+    <button style="width: 115.5px; background-color: rgb(255, 0, 0); position: relative; left : 100px; text-align: right;" onclick="reloadPage()"> পরিমাপ মুছুন </button>
+
+  </div>
+
 
     <center><h2>___________গ্লাস___________</h2></center>
     <div id="glass-items">
@@ -236,11 +245,18 @@
 
     <button class="resultbtn" onclick="calculate()"><i class="fas fa-calculator"></i> ফলাফল</button>
 
-    <iframe src="https://sonicsignals.github.io/sonic/cal2.0.html"  height="380" width="341" style="border: 1px; border-color: #092918;"></iframe>
+    <iframe style="border-radius:  10px;" src="https://sonicsignals.github.io/sonic/cal2.0.html"  height="380" width="341" style="border: 1px; border-color: #092918;"></iframe>
 
 </div>
 
 <script>
+
+function reloadPage() {
+        location.reload();
+    }
+
+
+
     let itemIndex = 1;
     let hardwareIndex = 1;
 
@@ -315,7 +331,7 @@
             `মোট: ${totalSquareFeet.toFixed(3)} স্কয়ার ফিট<br>
             গ্লাস খরচ: ${totalGlassCost.toFixed(1)} টাকা<br>
             হার্ডওয়্যার খরচ: ${totalHardwareCost.toFixed(1)} টাকা<br>
-            সর্বমোট: ${totalCost.toFixed(2)} টাকা`;
+            সর্বমোট: ${totalCost.toFixed(1)} টাকা`;
     }
 
 </script>
